@@ -1,0 +1,1 @@
+<h1>Mail sent successfully after save data!</h1>

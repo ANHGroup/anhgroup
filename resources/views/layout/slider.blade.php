@@ -37,13 +37,13 @@
   <div class="carousel-inner">
     <div class="item slides active">
       <div class="slide-1"></div>
-      {{-- <div class="hero">
+      <div class="hero">
         <hgroup >
              <h2>Welcome to  <span><i><b>ANH Group</b></i></span></h2>         
             <h3>Keep the nation's funds within the nation</h3>
         </hgroup>
         <button class="btn btn-hero btn-lg" role="button">See all features</button>
-      </div> --}}
+      </div>
     </div>
     <div class="item slides">
       <div class="slide-2"></div>

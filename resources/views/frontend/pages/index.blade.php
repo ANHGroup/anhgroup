@@ -1,31 +1,31 @@
 <!doctype html>
 <html>
 <head>
-@include('layout.header_link') 
+@include('frontend.layout.header_link') 
 </head>
 
 <body>
 
 <!--Slider add area start-->
-@include('layout.slider')
+@include('frontend.pages.slider')
 <!--Slider add area start-->
 <!--Logo add area start-->
-@include('layout.main')
+@include('frontend.pages.company_header')
 
 
 <div class="blog_area">
-  @include('layout.manufacturer')
+  @include('frontend.pages.companies')
 </div><!-- blog area end   -->
 
 
 <!--Contact area Start-->
 <div class="contact_area">
-  @include('layout.footer') 
+  @include('frontend.layout.footer') 
 </div><!-- contact area end   -->
 <!--Contact area end-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
- @include('layout.js') 
+ @include('frontend.layout.js') 
   </body>
 </html>
 

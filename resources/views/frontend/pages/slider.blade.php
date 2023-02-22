@@ -4,7 +4,7 @@
 
 <header class="main_header">
   <div class="row">
-    <img src="{{asset('public/img/ANH_Group_logo_white.jpg')}}" style="width:60px;" class="" alt="ANH Group Logo">
+    <img src="{{asset('assets/frontend/images/ANH_Group_logo_white.jpg')}}" style="width:60px;" class="" alt="ANH Group Logo">
       <div class="mobile-toggle"> <span></span> <span></span> <span></span></div>
       <!-- <nav>
         <ul class="main_menu">

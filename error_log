@@ -1,0 +1,41 @@
+[12-Feb-2023 04:37:28 America/Chicago] PHP Warning:  require(/home2/srdlbd/public_html/demo/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 04:37:28 America/Chicago] PHP Warning:  require(/home2/srdlbd/public_html/demo/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 04:37:28 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/srdlbd/public_html/demo/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home2/srdlbd/public_html/demo/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 04:37:45 America/Chicago] PHP Warning:  require(/home2/srdlbd/public_html/demo/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 04:37:45 America/Chicago] PHP Warning:  require(/home2/srdlbd/public_html/demo/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 04:37:45 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/srdlbd/public_html/demo/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home2/srdlbd/public_html/demo/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 04:37:53 America/Chicago] PHP Warning:  require(/home2/srdlbd/public_html/demo/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 04:37:53 America/Chicago] PHP Warning:  require(/home2/srdlbd/public_html/demo/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 04:37:53 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/srdlbd/public_html/demo/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home2/srdlbd/public_html/demo/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 04:38:40 America/Chicago] PHP Warning:  require(/home2/srdlbd/public_html/demo/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 04:38:40 America/Chicago] PHP Warning:  require(/home2/srdlbd/public_html/demo/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 04:38:40 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/srdlbd/public_html/demo/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home2/srdlbd/public_html/demo/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 04:38:43 America/Chicago] PHP Warning:  require(/home2/srdlbd/public_html/demo/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 04:38:43 America/Chicago] PHP Warning:  require(/home2/srdlbd/public_html/demo/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 04:38:43 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/srdlbd/public_html/demo/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home2/srdlbd/public_html/demo/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 04:38:47 America/Chicago] PHP Warning:  require(/home2/srdlbd/public_html/demo/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 04:38:47 America/Chicago] PHP Warning:  require(/home2/srdlbd/public_html/demo/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 04:38:47 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/srdlbd/public_html/demo/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home2/srdlbd/public_html/demo/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/srdlbd/public_html/demo/index.php on line 34
+[12-Feb-2023 11:45:54 UTC] PHP Fatal error:  Cannot use Mail as Mail because the name is already in use in /home2/srdlbd/public_html/demo/app/Http/Controllers/MailController.php on line 7
+[12-Feb-2023 12:29:42 UTC] PHP Fatal error:  Cannot use App\Models\Mail as Mail because the name is already in use in /home2/srdlbd/public_html/demo/app/Http/Controllers/MailController.php on line 5
+[12-Feb-2023 12:32:34 UTC] PHP Fatal error:  Cannot use App\Config\Mail as Mail because the name is already in use in /home2/srdlbd/public_html/demo/app/Http/Controllers/MailController.php on line 7
+[12-Feb-2023 12:38:56 UTC] PHP Fatal error:  Cannot use App\Mail as Mail because the name is already in use in /home2/srdlbd/public_html/demo/app/Http/Controllers/MailController.php on line 8
+[12-Feb-2023 12:40:01 UTC] PHP Fatal error:  Cannot use App\Config\Mail as Mail because the name is already in use in /home2/srdlbd/public_html/demo/app/Http/Controllers/MailController.php on line 7

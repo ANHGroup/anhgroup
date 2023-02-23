@@ -93,7 +93,7 @@
 </div>
 </div>
 <div class="panel-footer" style="font-style: italic;">
-    <h6>Developed by ANH Enterprise Ltd.</h6>@ @php echo date('Y'); @endphp
+    <h6>Developed by ANH Enterprise Ltd.</h6>@ @php echo date('m'); @endphp
 </div>
 </div>
 </div>

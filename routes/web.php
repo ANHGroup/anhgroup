@@ -14,10 +14,8 @@ use App\Http\Controllers\FeatureController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/index', [App\Http\Controllers\AnhController::class, 'index'])->name('index');
+
+Route::get('/', [App\Http\Controllers\AnhController::class, 'index'])->name('index');
 Route::post('/store', [App\Http\Controllers\ContactController::class, 'store'])->name('store');
 Route::get('/send', [App\Http\Controllers\ContactController::class, 'send'])->name('send');
 Route::resource('topsection', TopsectionController::class);

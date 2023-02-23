@@ -302,10 +302,10 @@ Image credits: unsplash.com
 .logo {
   padding-top: 17px;    
   width: 50px;
-  font-size: 25px;
+  font-size: 30px;
   color: #3498db;
   text-transform: uppercase;
-  float: left;
+  float: right;
   display: block;
   margin-top: 0;
   line-height: 1;
@@ -339,7 +339,7 @@ Image credits: unsplash.com
 }
 
 nav {
-  float: right;
+  /*float: right;*/
   width: 60%;
 }
 @media only screen and (max-width: 766px) {
@@ -1188,4 +1188,43 @@ line-height: 45px !important;}
   margin-bottom: 30px;
   text-align: center;
 }
+.search-box button {
+    height: 32px;
+    width: 32px;
+    margin-left: -5px;
+    background: LightGrey;
+    font-size: 17px;
+    border: none;
+    margin-top: 14px;
+    margin-right: 16px;
+}
+    
+.search-box input[type=text] {
+    height: 26px;
+    font-size: 17px;
+    width: 200px;
+    margin-top: 14px;
+}
+.search-box {
+    float: right;
+}
+@media screen and (max-width: 650px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
 
+    .navbar a.icon {
+        display: block;
+        float: right;
+    }
+
+    .search-box {
+        display: none;
+    }
+}
+.search-box.expanded {
+    display: block;
+    float: left;
+    margin-left: 16px;
+    padding-bottom: 8px;
+}

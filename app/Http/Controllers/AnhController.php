@@ -14,7 +14,7 @@ class AnhController extends Controller
      */
     public function index()
     {
-        return view('frontend.pages.index');
+        return view('frontend.pages.home');
     }
 
     /**
@@ -22,9 +22,9 @@ class AnhController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function about()
     {
-        //
+        return view('frontend.pages.about');
     }
 
     /**

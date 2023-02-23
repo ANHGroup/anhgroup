@@ -3,19 +3,18 @@
 <head>
 @include('frontend.layout.header_link') 
 </head>
+@include('frontend.layout.header') 
 
 <body>
 
 <!--Slider add area start-->
-@include('frontend.pages.slider')
+@yield('slider')
 <!--Slider add area start-->
 <!--Logo add area start-->
-@include('frontend.pages.company_header')
-
-
-<div class="blog_area">
-  @include('frontend.pages.companies')
-</div><!-- blog area end   -->
+<div class="service_area">
+@yield('content')
+</div>
+<!-- blog area end   -->
 
 
 <!--Contact area Start-->

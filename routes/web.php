@@ -16,6 +16,7 @@ use App\Http\Controllers\FeatureController;
 
 
 Route::get('/', [App\Http\Controllers\AnhController::class, 'index'])->name('index');
+Route::get('/about', [App\Http\Controllers\AnhController::class, 'about'])->name('about');
 Route::post('/store', [App\Http\Controllers\ContactController::class, 'store'])->name('store');
 Route::get('/send', [App\Http\Controllers\ContactController::class, 'send'])->name('send');
 Route::resource('topsection', TopsectionController::class);

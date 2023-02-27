@@ -42,11 +42,11 @@
         </a>
       </div>
       <div class="single_blog col-md-4 slider-content">
-        <a href="https://www.anhlimited.com/">
+        <a href="https://www.srdlbd.com/">
           <img src="{{asset('assets/frontend/images/companies/ANH_Limited_Logo.png')}}" class="" alt="ANH Limited">
           <div class="slider-text">
             <h3>ANH Limited</h3>
-            <p>ANH Limited is one of the leading Bangladeshi Manufacturer.</p>
+            <p>ANH Limited is one of the leading Warehouse Solution, Material Handling, Fabric Makeup, Dyeing & Automation Solution Companies in Bangladesh.</p>
           </div>
         </a>
       </div>

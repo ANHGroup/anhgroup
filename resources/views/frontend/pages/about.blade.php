@@ -1,25 +1,16 @@
 @extends('frontend.layout.muster')
-@section('content')
-<div class="banner">
-  <div>
-    <h1>Welcome to the site</h1>
-    
-    <button>Get started</button>
-  </div>  
-</div>
 
-<style>
-.banner {
-    /* The image used */
-    background-image:
-    url(assets/frontend/slider/Slider1.jpg);
-    /* Set background size */
-    background-size:cover;
-    background-attachment: fixed;
-    /* Prevent image from repeating */
-   /* background-repeat: no-repeat;*/
-    height: 400px;
-  }
-</style>
+@section('content')
+
+
+<div class="banner-area career-banner-area">
+ <img src="{{asset('assets/frontend/images/photo-01.jpg')}}" style="height:500px;width:1400px">
+  <div>
+    <h1>Welcome to <span style="font-style:italic;">ANH GROUP<span></h1>
+    
+   
+  </div> 
+  </div> 
+
 
 @endsection

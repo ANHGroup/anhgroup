@@ -38,27 +38,27 @@
           <h1>Contact us</h1>
           <p>OUR TEAM INCLUDES GREAT THINKERS. YOU WOULD LOVE TO WORK WITH THEM AS THEY ARE JUST AMAZING PEOPLE.</p>
           <div class="col-lg-8">
-                        @if(session()->has('message'))
-                        <div class="btn btn-success waves-effect waves-light btn-sm" id="toastr-five">
+            @if(session()->has('message'))
+            <div class="btn btn-success waves-effect waves-light btn-sm" id="toastr-five">
 
-                          {{ session()->get('message') }}
+              {{ session()->get('message') }}
 
-                          <span aria-hidden="true">&times;</span>
-                      </div>
-                      @endif
-</div>
- <div class="col-lg-8">
+              <span aria-hidden="true">&times;</span>
+          </div>
+          @endif
+      </div>
+      <div class="col-lg-8">
           @if (count($errors) > 0)
           <div class = "alert alert-danger">
             <ul>
-             @foreach ($errors->all() as $error)
-             <li>{{ $error }}</li>
-             @endforeach
-         </ul>
-     </div>
-     @endif
-</div>
-     <div class="col-md-6">
+               @foreach ($errors->all() as $error)
+               <li>{{ $error }}</li>
+               @endforeach
+           </ul>
+       </div>
+       @endif
+   </div>
+   <div class="col-md-6">
       <form action="{{ url('/store') }}" method="post" id="add_form">
         @csrf
 
@@ -93,7 +93,7 @@
 </div>
 </div>
 <div class="panel-footer" style="font-style: italic;">
-    <h6>Developed by ANH Enterprise Ltd.</h6>@ @php echo date('m'); @endphp
+    <h6>Developed by ANH Enterprise Ltd.</h6>@ @php echo date('Y'); @endphp
 </div>
 </div>
 </div>

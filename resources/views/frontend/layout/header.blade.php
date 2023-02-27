@@ -10,12 +10,12 @@
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
       </div> -->
-      <div class="search-box" id="search-responsive">
+    <!--   <div class="search-box" id="search-responsive">
         <form action="search.php" method="get">
           <input type="text" name="search" maxlength="60" placeholder="Search..." required>
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
-      </div>
+      </div> -->
       <nav>
         <ul class="main_menu" style="">
           <li><a href="{{ route('index') }}">Home</a></li>

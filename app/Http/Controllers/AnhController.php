@@ -15,7 +15,7 @@ class AnhController extends Controller
     public function index()
     {
         
-        return view('Frontend.pages.home');
+        return view('frontend.pages.home');
     }
 
     /**
@@ -25,7 +25,8 @@ class AnhController extends Controller
      */
     public function about()
     {
-        return view('Frontend.pages.about');
+        
+        return view('frontend.pages.about');
     }
 
     /**

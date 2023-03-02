@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TopsectionController;
 use App\Http\Controllers\FeatureController;
+use App\Http\Controllers\DistributorController;
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\CareerController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,4 +25,7 @@ Route::post('/store', [App\Http\Controllers\ContactController::class, 'store'])-
 Route::get('/send', [App\Http\Controllers\ContactController::class, 'send'])->name('send');
 Route::resource('topsection', TopsectionController::class);
 Route::resource('features', FeatureController::class);
-
+Route::resource('distributor', DistributorController::class);
+Route::resource('project', ProjectController::class);
+Route::resource('event', EventController::class);
+Route::resource('career', CareerController::class);

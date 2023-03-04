@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-@include('backend.layout.header')
+@include('backend.admin.layout.header')
 
   <body class="nav-md">
     <div class="container body">
-      <div class="main_container">
+     
        
             
             <!-- sidebar menu -->
-        @include('backend.layout.sidebar')
+        @include('backend.admin.layout.sidebar')
               <!-- /sidebar menu -->
         <!-- top navigation -->
-        @include('backend.layout.navheader')
+        @include('backend.admin.layout.navheader')
         <!-- /top navigation -->
 
         <!-- page content -->
@@ -22,13 +22,13 @@
 
         <!-- footer content -->
         <footer>
-          @include('backend.layout.footer')
+          @include('backend.admin.layout.footer')
         </footer>
         <!-- /footer content -->
       </div>
-    </div>
+ 
 <!-- js start -->
-    @include('backend.layout.js')
+    @include('backend.admin.layout.js')
 <!-- js start -->
   </body>
 </html>

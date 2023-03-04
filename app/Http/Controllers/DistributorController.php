@@ -14,10 +14,10 @@ class DistributorController extends Controller
      */
     public function index()
     {
-        $distributors=Distributor::all();
+        $distributors = Distributor::all();
 
         // dd($distributor);
-        return view('backend.website.pages.distributor_list',compact('distributors'));
+        return view('backend.website.pages.distributor_list', compact('distributors'));
     }
 
     /**
@@ -25,20 +25,30 @@ class DistributorController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create_distributor()
     {
-        //
+
+        //echo "dsfd";
+        return view('backend.admin.pages.distributor.create');
+
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+
+        /*Distributor::create_distributor($request->all());*/
+        $distributor = new Distributor;
+        $distributor->name = $request->name;
+        $distributor->code = $request->code;
+        $distributor->mobile = $request->mobile;
+        $distributor->type = $request->type;
+        $distributor->district = $request->district;
+        $distributor->upozila = $request->upozila;
+        //dd($distributor);
+        $distributor->save();
+
+        session()->flash('message', 'Successfully Save Your Information.');
+        return redirect()->back();
     }
 
     /**
@@ -47,10 +57,12 @@ class DistributorController extends Controller
      * @param  \App\Models\Distributor  $distributor
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function distributor_list()
     {
-        
-    
+        $distributors = Distributor::all();
+
+        // dd($distributor);
+        return view('backend.admin.pages.distributor.list', compact('distributors'));
     }
 
     /**
@@ -82,8 +94,13 @@ class DistributorController extends Controller
      * @param  \App\Models\Distributor  $distributor
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Distributor $distributor)
+    public function delete_distributor($id)
     {
-        //
+        //dd($id);
+        $distributor = Distributor::find($id);
+        $distributor->delete();
+        return redirect()->back();
+
     }
+
 }

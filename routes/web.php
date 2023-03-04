@@ -1,12 +1,12 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TopsectionController;
-use App\Http\Controllers\FeatureController;
-use App\Http\Controllers\DistributorController;
-use App\Http\Controllers\ProjectController;
-use App\Http\Controllers\EventController;
 use App\Http\Controllers\CareerController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\FeatureController;
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\TopsectionController;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,16 +16,21 @@ use App\Http\Controllers\CareerController;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
-
+ */
 
 Route::get('/', [App\Http\Controllers\AnhController::class, 'index'])->name('index');
 Route::get('/about', [App\Http\Controllers\AnhController::class, 'about'])->name('about');
 Route::post('/store', [App\Http\Controllers\ContactController::class, 'store'])->name('store');
 Route::get('/send', [App\Http\Controllers\ContactController::class, 'send'])->name('send');
+Route::get('/create_distributor', [App\Http\Controllers\DistributorController::class, 'create_distributor']);
+Route::post('/store_distributor', [App\Http\Controllers\DistributorController::class, 'store']);
+Route::get('/distributor_list', [App\Http\Controllers\DistributorController::class, 'distributor_list']);
+Route::get('/delete_distributor/{id}', [App\Http\Controllers\DistributorController::class, 'delete_distributor']);
 Route::resource('topsection', TopsectionController::class);
+//Route::post('/store_distributor', 'DistributorController@store');
 Route::resource('features', FeatureController::class);
-Route::resource('distributor', DistributorController::class);
+/*Route::resource('distributor', DistributorController::class);*/
+
 Route::resource('project', ProjectController::class);
 Route::resource('event', EventController::class);
 Route::resource('career', CareerController::class);

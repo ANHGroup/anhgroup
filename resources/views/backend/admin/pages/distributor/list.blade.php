@@ -1,5 +1,6 @@
-@extends('backend.website.layout.master')
+@extends('backend.admin.layout.master')
 @section('content')
+
 <div class="col-md-12 col-sm-12 ">
                 <div class="x_panel">
                   <div class="x_title">
@@ -27,6 +28,7 @@
                           <th>Mobile</th>
                           <th>District</th>
                           <th>Upozila</th>
+                          <th>Action</th>
                        </tr>
                       </thead>
                       <tbody>
@@ -40,6 +42,7 @@
                         <td>{{$distributor->mobile}}</td>
                         <td>{{$distributor->district}}</td>
                         <td>{{$distributor->upozila}}</td>
+                        <td><a href="#">Edit ||<a href="{{url('delete_distributor/'.$distributor->id)}}">Delete</td>
                         </tr>
                         @endforeach
                         </tbody>
@@ -50,4 +53,6 @@
             </div>
         </div>
      </div>
-     @endsection
+
+
+@endsection

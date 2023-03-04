@@ -31,7 +31,7 @@
                         </li>
                         </ul>
                         <ul class="nav side-menu">
-                        <li><a><i class="fa fa-home"></i> Project <span class="fa fa-chevron-down"></span></a>
+                        <li><a><i class="fas fa-project-diagram"></i> Project <span class="fa fa-chevron-down"></span></a>
                             <ul class="nav child_menu">
                                 <li><a href="{{URL('create_distributor')}}">Create</a></li>
                                 <li><a href="{{URL('distributor_list')}}">List</a></li>

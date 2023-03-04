@@ -22,10 +22,14 @@ Route::get('/', [App\Http\Controllers\AnhController::class, 'index'])->name('ind
 Route::get('/about', [App\Http\Controllers\AnhController::class, 'about'])->name('about');
 Route::post('/store', [App\Http\Controllers\ContactController::class, 'store'])->name('store');
 Route::get('/send', [App\Http\Controllers\ContactController::class, 'send'])->name('send');
+// Distributor Start
 Route::get('/create_distributor', [App\Http\Controllers\DistributorController::class, 'create_distributor']);
 Route::post('/store_distributor', [App\Http\Controllers\DistributorController::class, 'store']);
 Route::get('/distributor_list', [App\Http\Controllers\DistributorController::class, 'distributor_list']);
 Route::get('/delete_distributor/{id}', [App\Http\Controllers\DistributorController::class, 'delete_distributor']);
+Route::get('/edit_distributor/{id}', [App\Http\Controllers\DistributorController::class, 'edit']);
+Route::post('/update_distributor/{id}', [App\Http\Controllers\DistributorController::class, 'update']);
+// Distributor End
 Route::resource('topsection', TopsectionController::class);
 //Route::post('/store_distributor', 'DistributorController@store');
 Route::resource('features', FeatureController::class);

@@ -71,9 +71,10 @@ class DistributorController extends Controller
      * @param  \App\Models\Distributor  $distributor
      * @return \Illuminate\Http\Response
      */
-    public function edit(Distributor $distributor)
+    public function edit($id)
     {
-        //
+        $distributors_info = Distributor::find($id);
+        return view('backend.admin.pages.distributor.edit', compact('distributors_info'));
     }
 
     /**
@@ -83,9 +84,21 @@ class DistributorController extends Controller
      * @param  \App\Models\Distributor  $distributor
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Distributor $distributor)
+    public function update(Request $request, $id)
     {
-        //
+        $distributor = Distributor::find($id);
+
+        $distributor->name = $request->name;
+        $distributor->code = $request->code;
+        $distributor->mobile = $request->mobile;
+        $distributor->type = $request->type;
+        $distributor->district = $request->district;
+        $distributor->upozila = $request->upozila;
+        dd($distributor);
+        $distributor->save();
+
+        session()->flash('message', 'Successfully Update Your Information.');
+        return redirect()->back();
     }
 
     /**

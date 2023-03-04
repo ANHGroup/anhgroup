@@ -42,12 +42,12 @@
                         <td>{{$distributor->mobile}}</td>
                         <td>{{$distributor->district}}</td>
                         <td>{{$distributor->upozila}}</td>
-                        <td><a href="#">Edit ||<a href="{{url('delete_distributor/'.$distributor->id)}}">Delete</td>
+                        <td><a href="{{url('edit_distributor/'.$distributor->id)}}" class="btn btn-success">Edit ||<a href="{{url('delete_distributor/'.$distributor->id)}}" class="btn btn-danger">Delete</td>
                         </tr>
                         @endforeach
                         </tbody>
                     </table>
-					           </div>
+					 </div>
                 </div>
               </div>
             </div>

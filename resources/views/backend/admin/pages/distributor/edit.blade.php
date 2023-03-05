@@ -7,17 +7,21 @@
             <div class="x_content">
 
                     <span class="section">Distributor Info</span>
-                    <form method="POST" action="{{ route('/update_distributor') }}" >
+                    <form method="POST" action="{{ url('update_distributor',$distributors_info->id) }}" >
                     @csrf
+                    <div class="field item form-group">
+
+                        <div class="col-md-6 col-sm-6">
+                            <input class="form-control" type="hidden" name="id"  value="{{$distributors_info->id}}" />
+                        </div>
+                    </div>
                     <div class="field item form-group">
                         <label class="col-form-label col-md-3 col-sm-3  label-align">Name<span
                                 class="required">*</span></label>
                         <div class="col-md-6 col-sm-6">
                             <input class="form-control" type="text" name="name" value="{{$distributors_info->name}}" />
                         </div>
-                        <div class="col-md-6 col-sm-6">
-                            <input class="form-control" type="hidden" name="id"  value="{{$distributors_info->id}}" />
-                        </div>
+
                     </div>
                     <div class="field item form-group">
                         <label class="col-form-label col-md-3 col-sm-3  label-align">Code<span

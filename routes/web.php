@@ -33,7 +33,7 @@ Route::post('/update_distributor/{id}', [App\Http\Controllers\DistributorControl
 Route::resource('topsection', TopsectionController::class);
 //Route::post('/store_distributor', 'DistributorController@store');
 Route::resource('features', FeatureController::class);
-/*Route::resource('distributor', DistributorController::class);*/
+// Route::resource('distributor', DistributorController::class);
 
 Route::resource('project', ProjectController::class);
 Route::resource('event', EventController::class);

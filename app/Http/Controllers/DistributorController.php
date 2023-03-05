@@ -94,7 +94,7 @@ class DistributorController extends Controller
         $distributor->type = $request->type;
         $distributor->district = $request->district;
         $distributor->upozila = $request->upozila;
-        dd($distributor);
+        //dd($distributor);
         $distributor->save();
 
         session()->flash('message', 'Successfully Update Your Information.');

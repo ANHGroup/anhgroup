@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Career;
+use App\Models\Applicant;
 use Illuminate\Http\Request;
 
-class CareerController extends Controller
+class ApplicantController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,7 @@ class CareerController extends Controller
      */
     public function index()
     {
-        $careers = Career::all();
-        return view('backend.website.pages.career_list', compact('careers'));
+        //
     }
 
     /**
@@ -25,7 +24,7 @@ class CareerController extends Controller
      */
     public function create()
     {
-        return view('backend.admin.pages.career.create');
+        //
     }
 
     /**
@@ -36,17 +35,24 @@ class CareerController extends Controller
      */
     public function store(Request $request)
     {
-        $career = new Career;
-        $career->title = $request->title;
-        $career->last_date = $request->last_date;
+        $applicant = new Applicant;
+        $applicant->title = $request->title;
+        $applicant->name = $request->name;
+        $applicant->email = $request->email;
+        $applicant->phone = $request->phone;
+        $applicant->present_address = $request->present_address;
+        $applicant->permanent_address = $request->permanent_address;
+        $applicant->expected_salary = $request->expected_salary;
+        $applicant->experience = $request->experience;
+
         //$career->job_details = $request->job_details;
 
-        $job_circular = time() . '.' . request()->job_details->getClientOriginalExtension();
-        request()->job_details->move(public_path('file'), $job_circular);
-        $career->job_details = $job_circular;
+        $cv = time() . '.' . request()->cv->getClientOriginalExtension();
+        request()->cv->move(public_path('applicant'), $cv);
+        $applicant->cv = $cv;
 
-        // dd($career);
-        $career->save();
+        // dd($applicant);
+        $applicant->save();
 
         session()->flash('message', 'Successfully Save Your Information.');
         return redirect()->back();
@@ -55,10 +61,10 @@ class CareerController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Career  $career
+     * @param  \App\Models\Applicant  $applicant
      * @return \Illuminate\Http\Response
      */
-    public function show(Career $career)
+    public function show(Applicant $applicant)
     {
         //
     }
@@ -66,10 +72,10 @@ class CareerController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Career  $career
+     * @param  \App\Models\Applicant  $applicant
      * @return \Illuminate\Http\Response
      */
-    public function edit(Career $career)
+    public function edit(Applicant $applicant)
     {
         //
     }
@@ -78,10 +84,10 @@ class CareerController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Career  $career
+     * @param  \App\Models\Applicant  $applicant
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Career $career)
+    public function update(Request $request, Applicant $applicant)
     {
         //
     }
@@ -89,10 +95,10 @@ class CareerController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Career  $career
+     * @param  \App\Models\Applicant  $applicant
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Career $career)
+    public function destroy(Applicant $applicant)
     {
         //
     }

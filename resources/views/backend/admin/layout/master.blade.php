@@ -4,9 +4,9 @@
 
   <body class="nav-md">
     <div class="container body">
-     
-       
-            
+
+
+
             <!-- sidebar menu -->
         @include('backend.admin.layout.sidebar')
               <!-- /sidebar menu -->
@@ -21,12 +21,10 @@
        <!-- /page content -->
 
         <!-- footer content -->
-        <footer>
-          @include('backend.admin.layout.footer')
-        </footer>
+
         <!-- /footer content -->
       </div>
- 
+
 <!-- js start -->
     @include('backend.admin.layout.js')
 <!-- js start -->

@@ -30,6 +30,10 @@ Route::get('/delete_distributor/{id}', [App\Http\Controllers\DistributorControll
 Route::get('/edit_distributor/{id}', [App\Http\Controllers\DistributorController::class, 'edit']);
 Route::post('/update_distributor/{id}', [App\Http\Controllers\DistributorController::class, 'update']);
 // Distributor End
+//Career Start
+Route::get('/create_career', [App\Http\Controllers\CareerController::class, 'create_career']);
+Route::post('/store_career', [App\Http\Controllers\CareerController::class, 'store']);
+//Career End
 Route::resource('topsection', TopsectionController::class);
 //Route::post('/store_distributor', 'DistributorController@store');
 Route::resource('features', FeatureController::class);
@@ -38,3 +42,7 @@ Route::resource('features', FeatureController::class);
 Route::resource('project', ProjectController::class);
 Route::resource('event', EventController::class);
 Route::resource('career', CareerController::class);
+
+// Applicant Start
+Route::post('/store_applicant', [App\Http\Controllers\ApplicantController::class, 'store']);
+// Applicant End

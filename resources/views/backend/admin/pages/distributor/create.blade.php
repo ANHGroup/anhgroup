@@ -6,25 +6,27 @@
         <div class="x_panel">
             <meta name="csrf-token" content="{{ csrf_token() }}">
             <span class="section">Distributor Info</span>
-            <div class="col-lg-8">
-                    @if(session()->has('message'))
-                    <div class="btn btn-success waves-effect waves-light btn-sm" id="toastr-five">
+            <div class="">
+                        @if(session()->has('message'))
+                        <div class="btn btn-success waves-effect waves-light btn-sm" id="toastr-five">
 
-                        {{ session()->get('message') }}
+                          {{ session()->get('message') }}
 
-                        <span aria-hidden="true">&times;</span>
-                    </div>
-                    @endif
-                </div>
-                <div class="col-lg-8">
-                    @if (count($errors) > 0)
-                    <div class="alert alert-danger">
-                        @if ($message = Session::get('error'))
-
-                        @endif
-                    </div>
-                    @endif
-                </div>
+                          <span aria-hidden="true">&times;</span>
+                      </div>
+                      @endif
+</div>
+ <div class="">
+          @if (count($errors) > 0)
+          <div class = "alert alert-danger">
+            <ul>
+             @foreach ($errors->all() as $error)
+             <li>{{ $error }}</li>
+             @endforeach
+         </ul>
+     </div>
+     @endif
+</div>
             <div class="x_content">
 
 

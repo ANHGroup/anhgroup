@@ -35,7 +35,8 @@ class DistributorController extends Controller
 
     public function store(Request $request)
     {
-        $this->validate($request, [
+
+        $request->validate([
             'name' => 'required|max:8',
             'code' => 'required',
             'mobile' => 'required',

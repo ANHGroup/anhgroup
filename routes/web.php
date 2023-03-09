@@ -46,3 +46,6 @@ Route::resource('career', CareerController::class);
 // Applicant Start
 Route::post('/store_applicant', [App\Http\Controllers\ApplicantController::class, 'store']);
 // Applicant End
+Route::get('/create_company', [App\Http\Controllers\CopmpanyController::class, 'create']);
+Route::post('/store_company', [App\Http\Controllers\CopmpanyController::class, 'store']);
+Route::get('/list_company', [App\Http\Controllers\CopmpanyController::class, 'show']);

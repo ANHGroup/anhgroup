@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Anh;
+use App\Models\Copmpany;
 use Illuminate\Http\Request;
 
 class AnhController extends Controller
@@ -14,8 +15,8 @@ class AnhController extends Controller
      */
     public function index()
     {
-        
-        return view('frontend.pages.home');
+        $companies = Copmpany::all();
+        return view('frontend.pages.home', compact('companies'));
     }
 
     /**
@@ -25,7 +26,7 @@ class AnhController extends Controller
      */
     public function about()
     {
-        
+
         return view('frontend.pages.about');
     }
 
